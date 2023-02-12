@@ -17,6 +17,7 @@ server = Server('http://www.ensembl.org')
 ### access correct mart and dataset
 mart = server['ENSEMBL_MART_ENSEMBL']
 #ensembl = server.list_marts()
+
 # dataset needed for query of biomart server
 dataset = mart['hsapiens_gene_ensembl']
 

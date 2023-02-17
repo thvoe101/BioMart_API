@@ -80,7 +80,7 @@ def find_CDS(ENST):
     return cds_length
 
 # write output to excel
-with pd.ExcelWriter(str(date)  + "_new_genes_"+ "_outputNEW_control.xlsx") as writer:
+with pd.ExcelWriter(str(date)  + "_biomart_"+ "_output.xlsx") as writer:
     NM_ids = NM_IDs(refseq_ids)
     df_merge = BioMart(NM_ids, ext_attr, ext_attr_header)
     ENST = BioMart(NM_ids, ext_attr, ext_attr_header)[15].values.tolist()

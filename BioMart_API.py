@@ -7,9 +7,9 @@ import openpyxl
 # date for filename
 date = date.today()
 
-excel = pd.read_excel("MANE.GRCh38.v1.0.summary.xlsx")
-#refseq_ids = ['NM_004067','NM_001370581']
-refseq_ids = excel["RefSeq_nuc"].values.tolist()
+#excel = pd.read_excel("MANE.GRCh38.v1.0.summary.xlsx")
+#refseq_ids = excel["RefSeq_nuc"].values.tolist()
+refseq_ids = ['NM_004067','NM_001370581']
 
 ### access Ensembl server
 server = Server('http://www.ensembl.org')
